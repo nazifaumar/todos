@@ -40,7 +40,7 @@
             <div>
                 <span class="text-muted fas fa-comment btn"></span>
             </div>
-            <div class="text-muted">2 todos</div>
+            <div class="text-muted">{{ $todo->count() }} todos</div>
             <button class="ml-auto btn bg-white text-muted fas fa-angle-down" type="button" data-toggle="collapse"
                 data-target="#comments" aria-expanded="false" aria-controls="comments"></button>
         </div>
@@ -67,5 +67,6 @@
                 <span class="fas fa-arrow-right btn"></span>
             </div>
         </div>
+        <br> 
         @endforeach
 @endsection

@@ -8,17 +8,17 @@
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/main.css')}}">
     <title>Todo App</title>
 </head>
-<body class="bg-dark">
+<body>
     @if (Auth::check())
-    <nav class="navbar navbar-expand-lg bg-dark">
-        <a class="navbar-brand" href="#">TODO APP</a>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <a class="navbar-brand " href="#">TODO APP</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto navbar-right-top">
                 <li class="nav-item dropdown nav-user">
-                    <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://img.icons8.com/dusk/100/000000/user-female-circle.png" alt="" class="rounded-circle" width="35"></a>
+                    <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://img.icons8.com/dusk/100/000000/user-female-circle.png" alt="" class="rounded-circle" width="38"></a>
                     <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                         <div class="nav-user-info">
                             <p class="mb-0 nav-user-name">{{ Auth::user()->name }}</p>

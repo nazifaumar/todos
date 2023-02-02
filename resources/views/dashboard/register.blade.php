@@ -1,9 +1,8 @@
 @extends('layout')
 
 @section('content')
-
-<div class="container my-5 d-flex justify-content-center align-items-center">
-    <form method="POST" action="{{route('register.post')}}" class="card py-4 px-4">
+<div class="container my-5 d-flex justify-content-center align-items-center" >
+    <form method="POST" action="{{route('register.post')}}" class="card py-4 px-4 ">
         @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
@@ -16,11 +15,6 @@
         @csrf
         <div class="text-center logo ml-3">
             <i class="fas fa-user-plus"></i>
-        </div>
-        <div class="text-center mt-3">
-            
-        <span class="info-text">silahkan mengisi data di bawah untuk membuat akun baru</span>
-        
         </div>
         <div class="position-relative mt-3 form-input">
             <label>Email</label>
